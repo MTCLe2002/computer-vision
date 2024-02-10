@@ -1,0 +1,19 @@
+name: computer-vision-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - opencv
+  - numpy
+  - matplotlib
+  - scikit-learn-intelex
+  - jupyter
+  - seaborn
+  - pillow
+  - tensorflow
+  - keras
+  - pandas
+  - scipy
+  - tk
+  - black
