@@ -1,19 +1,19 @@
-# models/example_model.py
-
 import sys
-import os
 
-sys.path.append(
-    os.path.join(
-        os.path.dirname(__file__),
-        "C:/Users/mtcle/OneDrive/WorkSpace/computer-vision/src",
-        "src",
-    )
+sys.path.append("src/features")
+# sys.path.append("src/data")
+# sys.path.append("src/models")
+# sys.path.append("src/visualization")
+
+import window
+import tkinter as tk
+
+root = tk.Tk()
+window.CenterOnScreen(root=root, root_width=1000, root_height=600)
+
+window.iconChange(
+    root=root,
+    link_folder_icon="C:/Users/mtcle/OneDrive/WorkSpace/computer-vision/data/external/image/icon.ico",
 )
 
-from src.example import hello
-
-
-def use_example():
-    result = hello()
-    return result
+root.mainloop()
