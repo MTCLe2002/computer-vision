@@ -1,6 +1,7 @@
 import tkinter as tk
 
 
+# set Center On Screen
 def CenterOnScreen(root, root_width, root_height):
     """set window open center screen
     root = name_root_window
@@ -31,6 +32,7 @@ def CenterOnScreen(root, root_width, root_height):
     root.geometry(f"{root_width}x{root_height}+{center_x}+{center_y}")
 
 
+# icon Change
 def iconChange(root, link_folder_icon):
     """change icon window of app
     root = name_root of window
