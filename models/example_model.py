@@ -25,7 +25,8 @@ root.rowconfigure(1, weight=5)
 
 
 t = tk.Frame(root, width=1000, height=100, borderwidth=2, relief="solid")
-t.grid(row=0, column=0, sticky=tk.N)
+t.grid(row=0, column=0)
+
 b = tk.Frame(root, width=1000, height=100, borderwidth=2, relief="solid")
 b.grid(row=1, column=0)
 
