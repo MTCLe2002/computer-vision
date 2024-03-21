@@ -12,13 +12,13 @@ I = np.array(
     ]
 )
 
-Hx = np.array([[0, 1], [-1, 0]])
+print(I)
+Hx = np.array([[0, 1], [-1, 0]]).astype(np.uint8)
 
-Hy = np.array([[-1, 0], [0, 1]])
+Hy = np.array([[-1, 0], [0, 1]]).astype(np.uint8)
 
 IxHx = convolve2d(I, Hx, mode="valid")
-IyHy = convolve2d(I, Hy, mode="valid")
-
+IxHy = convolve2d(I, Hy, mode="valid")
 # Calculate the magnitude and direction of gradient using  Robert
-A = IxHx + IyHy
+A = IxHx + IxHy
 print(A)
