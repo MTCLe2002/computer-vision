@@ -12,7 +12,7 @@ while True:
     # IxHy = cv2.filter2D(Frame, -1, Hy)
     IxHx = scipy.signal.convolve(gray, Hx, mode="same", method="direct")
     IxHy = scipy.signal.convolve(gray, Hy, mode="same", method="direct")
-    A = (IxHx + IxHy).astype(np.uint8)
+    A = IxHx + IxHy
     cv2.imshow("thanh", A)
     if cv2.waitKey(1) == ord("q"):
         break
