@@ -8,7 +8,7 @@ cap = cv2.VideoCapture(0)
 while True:
     # take each frame
     _, Frame = cap.read()
-
+    Frame = cv2.flip(Frame, 1)  # flipping
     # convert BRG to HSV
     hsv = cv2.cvtColor(Frame, cv2.COLOR_BGR2HSV)
     lower_blue = np.array([90, 50, 70])
